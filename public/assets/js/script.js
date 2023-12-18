@@ -66,7 +66,8 @@ $(document).ready(function () {
                 })
                 $(":root").css({
                     "--bg1":"rgba(226,160,160,1)",
-                    "--color":"#440000"
+                    "--color":"#440000",
+                    "--table-bg":"rgba(255,255,255,1)",
                 })
                 $("#theme_color option[value=red]").attr("selected", true);
             } else if (theme_color === "blue") {
@@ -88,7 +89,8 @@ $(document).ready(function () {
                 })
                 $(":root").css({
                     "--bg1":"rgba(126,179,219,1)",
-                    "--color":"#00053d"
+                    "--color":"#00053d",
+                    "--table-bg":"rgba(255,255,255,1)",
                 })
                 $("#theme_color option[value=blue]").attr("selected", true);
             } else if (theme_color === "green") {
@@ -110,7 +112,8 @@ $(document).ready(function () {
                 })
                 $(":root").css({
                     "--bg1":"rgba(153,255,161,1)",
-                    "--color":"#02410a"
+                    "--color":"#02410a",
+                    "--table-bg":"rgba(242,245,245,1)",
                 })
                 $("#theme_color option[value=green]").attr("selected", true);
             } else if (theme_color === "orange") {
@@ -132,7 +135,8 @@ $(document).ready(function () {
                 })
                 $(":root").css({
                     "--bg1":"rgba(255,191,172,1)",
-                    "--color":"#755503"
+                    "--color":"#755503",
+                    "--table-bg":"rgba(236,236,236,1)",
                 })
                 $("#theme_color option[value=orange]").attr("selected", true);
             } else if (theme_color === "indigo") {
@@ -154,7 +158,8 @@ $(document).ready(function () {
                 })
                 $(":root").css({
                     "--bg1":"rgba(174,138,250,1)",
-                    "--color":"#1c024f"
+                    "--color":"#1c024f",
+                    "--table-bg":"rgba(226,213,242,1)",
                 })
                 $("#theme_color option[value=indigo]").attr("selected", true);
             }  else if (theme_color === "violet") {
@@ -176,7 +181,8 @@ $(document).ready(function () {
                 })
                 $(":root").css({
                     "--bg1":"rgba(228,156,225,1)",
-                    "--color":"#4a024f"
+                    "--color":"#4a024f",
+                    "--table-bg":"rgba(254,243,254,1)"
                 })
                 $("#theme_color option[value=violet]").attr("selected", true);
             } else {
@@ -198,7 +204,8 @@ $(document).ready(function () {
                 })
                 $(":root").css({
                     "--bg1":"rgba(226,160,160,1)",
-                    "--color":"#00053d"
+                    "--color":"#00053d",
+                    "--table-bg":"rgba(255,255,255,1)",
                 })
                 $("#theme_color option[value=red]").attr("selected", true);
             }

@@ -54,12 +54,13 @@ input[type="file"]::file-selector-button {
 }
 .table_box {
     border-radius: 17px;
-    background: rgb(242, 150, 150);
+    /* background: rgb(242, 150, 150);
     background: linear-gradient(
         0deg,
         rgb(239, 198, 198) 22%,
         rgba(241, 235, 235, 1) 91%
-    );
+    ); */
+    background:var(--table-bg);
     transition: all 0.5s;
 }
 
