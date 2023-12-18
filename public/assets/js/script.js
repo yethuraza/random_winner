@@ -58,6 +58,16 @@ $(document).ready(function () {
                     background: "rgb(226,160,160)",
                     background: "linear-gradient(0deg, rgba(226,160,160,1) 0%, rgba(255,255,255,1) 100%)",
                 })
+                $('*').css({
+                    color : '#440000',
+                });
+                $(".customer_reel,.product_reel,#startSlot").css({
+                    border: "8px solid #440000",
+                })
+                $(":root").css({
+                    "--bg1":"rgba(226,160,160,1)",
+                    "--color":"#440000"
+                })
                 $("#theme_color option[value=red]").attr("selected", true);
             } else if (theme_color === "blue") {
                 localStorage.setItem("theme_color", theme_color);
@@ -69,6 +79,16 @@ $(document).ready(function () {
                 $(".inside_box,.TwoColorBtn,#startSlot").css({
                     background: "rgb(126,179,219)",
                     background:"linear-gradient(0deg, rgba(126,179,219,1) 0%, rgba(255,255,255,1) 100%)",
+                })
+                $('*').css({
+                    color : '#00053d',
+                });
+                $(".customer_reel,.product_reel,#startSlot").css({
+                    border: "8px solid #00053d",
+                })
+                $(":root").css({
+                    "--bg1":"rgba(126,179,219,1)",
+                    "--color":"#00053d"
                 })
                 $("#theme_color option[value=blue]").attr("selected", true);
             } else if (theme_color === "green") {
@@ -82,6 +102,16 @@ $(document).ready(function () {
                     background: "rgb(153,255,161)",
                     background:"linear-gradient(0deg, rgba(153,255,161,1) 0%, rgba(242,245,245,1) 100%)",
                 })
+                $('*').css({
+                    color : '#02410a',
+                });
+                $(".customer_reel,.product_reel,#startSlot").css({
+                    border: "8px solid #02410a",
+                })
+                $(":root").css({
+                    "--bg1":"rgba(153,255,161,1)",
+                    "--color":"#02410a"
+                })
                 $("#theme_color option[value=green]").attr("selected", true);
             } else if (theme_color === "orange") {
                 localStorage.setItem("theme_color", theme_color);
@@ -93,6 +123,16 @@ $(document).ready(function () {
                 $(".inside_box,.TwoColorBtn,#startSlot").css({
                     background: "rgb(255,191,172)",
                     background:"linear-gradient(0deg, rgba(255,191,172,1) 0%, rgba(236,236,236,1) 100%)",
+                })
+                $('*').css({
+                    color : '#755503',
+                });
+                $(".customer_reel,.product_reel,#startSlot").css({
+                    border: "8px solid #755503",
+                })
+                $(":root").css({
+                    "--bg1":"rgba(255,191,172,1)",
+                    "--color":"#755503"
                 })
                 $("#theme_color option[value=orange]").attr("selected", true);
             } else if (theme_color === "indigo") {
@@ -106,6 +146,16 @@ $(document).ready(function () {
                     background: "rgb(174,138,250)",
                     background:"linear-gradient(0deg, rgba(174,138,250,1) 5%, rgba(226,213,242,1) 100%)",
                 })
+                $('*').css({
+                    color : '#1c024f',
+                });
+                $(".customer_reel,.product_reel,#startSlot").css({
+                    border: "8px solid #1c024f",
+                })
+                $(":root").css({
+                    "--bg1":"rgba(174,138,250,1)",
+                    "--color":"#1c024f"
+                })
                 $("#theme_color option[value=indigo]").attr("selected", true);
             }  else if (theme_color === "violet") {
                 localStorage.setItem("theme_color", theme_color);
@@ -118,6 +168,16 @@ $(document).ready(function () {
                     background: "rgb(228,156,225)",
                     background:"linear-gradient(0deg, rgba(228,156,225,1) 0%, rgba(254,243,254,1) 100%)",
                 })
+                $('*').css({
+                    color : '#4a024f',
+                });
+                $(".customer_reel,.product_reel,#startSlot").css({
+                    border: "8px solid #4a024f",
+                })
+                $(":root").css({
+                    "--bg1":"rgba(228,156,225,1)",
+                    "--color":"#4a024f"
+                })
                 $("#theme_color option[value=violet]").attr("selected", true);
             } else {
                 localStorage.setItem("theme_color", theme_color);
@@ -129,6 +189,16 @@ $(document).ready(function () {
                 $('.inside_box,.TwoColorBtn,#startSlot').css({
                     background: "rgb(226,160,160)",
                     background: "linear-gradient(0deg, rgba(226,160,160,1) 0%, rgba(255,255,255,1) 100%)",
+                })
+                $('*').css({
+                    color : '#00053d',
+                });
+                $(".customer_reel,.product_reel,#startSlot").css({
+                    border: "8px solid #00053d",
+                })
+                $(":root").css({
+                    "--bg1":"rgba(226,160,160,1)",
+                    "--color":"#00053d"
                 })
                 $("#theme_color option[value=red]").attr("selected", true);
             }

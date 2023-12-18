@@ -80,9 +80,9 @@
                 <div class="flex justify-end">
                     <a href="{{ route('PickWinner') }}" class="mt-0">
                         <button type="button"
-                            class="border border-[#490e0e] px-3 py-2 disabled:bg-slate-200 my-5 mx-3 rounded-full">မထည့်ပါ</button></a>
+                            class="border border-[var(--color)] px-3 py-2 disabled:bg-slate-200 my-5 mx-3 rounded-xl">မထည့်ပါ</button></a>
                     <button type="submit"
-                        class="border border-[#490e0e] px-3 py-2 disabled:bg-slate-200 my-5 mx-3 rounded-full"
+                        class="border border-[var(--color)] px-3 py-2 disabled:bg-slate-200 my-5 mx-3 rounded-xl"
                         id="saveBlank" disabled>ထည့်မည်</button>
                 </div>
             </form>

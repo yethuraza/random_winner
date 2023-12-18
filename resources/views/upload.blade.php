@@ -30,7 +30,7 @@
             <form action="{{ route('uploadCustomer') }}" method="post" enctype="multipart/form-data" class="mb-3">
                 @csrf
                 <h1 class="text-center text-white text-[20px] mt-3">Upload Participant File</h1>
-                <div class="inputField gap-3 mt-10 border border-[#490e0e] w-full rounded-xl border-dashed p-5">
+                <div class="inputField gap-3 mt-10 border border-[var(--color)] w-full rounded-xl border-dashed p-5">
                     <input type="file" name="CustomerUpload" id="CustomerUpload" class="w-full cursor-pointer">
 
                 </div>
@@ -109,7 +109,7 @@
             <form action="{{ route('uploadProduct') }}" method="post" enctype="multipart/form-data" class="mb-3">
                 @csrf
                 <h1 class="text-center text-white text-[20px] mt-3">Upload Gifts File</h1>
-                <div class="inputField gap-3 mt-10 border border-[#490e0e] w-full rounded-xl border-dashed p-5">
+                <div class="inputField gap-3 mt-10 border border-[var(--color)] w-full rounded-xl border-dashed p-5">
                     <input type="file" name="ProductUpload" id="ProductUpload" class="w-full cursor-pointer">
                 </div>
                 @error('ProductUpload')
