@@ -238,12 +238,16 @@ $(document).ready(function () {
                     customer_arr.join("</p><p>") +
                     "</p></div><div><p>" +
                     customer_arr.join("</p><p>") +
+                    "</p></div><div><p>" +
+                    customer_arr.join("</p><p>") +
                     "</p></div>";
             });
 
             product_reels = $(".product_reel").each(function (i, v) {
                 v.innerHTML =
                     "<div><p>" +
+                    product_arr.join("</p><p>") +
+                    "</p></div><div><p>" +
                     product_arr.join("</p><p>") +
                     "</p></div><div><p>" +
                     product_arr.join("</p><p>") +
