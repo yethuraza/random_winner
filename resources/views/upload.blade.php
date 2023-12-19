@@ -36,13 +36,13 @@
                 </div>
 
                 @error('CustomerUpload')
-                <div class="text-sm text-[#f84747]">{{ $message }}</div>
+                <div class="text-sm">{{ $message }}</div>
                 @enderror
                 @if(session('errorType') == 'customer')
                 <div class="alert alert-danger">
                     <ul>
                         @foreach($errors->all() as $error)
-                        <li class="text-sm text-[#f84747]">{{ $error }}</li>
+                        <li class="text-sm">{{ $error }}</li>
                         @endforeach
                     </ul>
                 </div>
@@ -57,7 +57,7 @@
             @if (session('success'))
             <div class="flex justify-end">
                 <div id="alert-cust"
-                    class="flex items-center p-3 mb-4 bg-gradient-to-tl from-green-600 to-lime-400 rounded-xl w-auto "
+                    class="flex items-center p-3 mb-4 bg-gradient-to-tl from-[var(--bg1)] to-[var(--table-bg)] rounded-xl w-auto "
                     role="alert">
                     <svg class="flex-shrink-0 w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor" viewBox="0 0 20 20">
@@ -113,13 +113,13 @@
                     <input type="file" name="ProductUpload" id="ProductUpload" class="w-full cursor-pointer">
                 </div>
                 @error('ProductUpload')
-                <div class="text-sm text-[#f84747]">{{ $message }}</div>
+                <div class="text-sm">{{ $message }}</div>
                 @enderror
                 @if(session('errorType') == 'product')
                 <div class="alert alert-danger">
                     <ul>
                         @foreach($errors->all() as $error)
-                        <li class="text-sm text-[#f84747]">{{ $error }}</li>
+                        <li class="text-sm">{{ $error }}</li>
                         @endforeach
                     </ul>
                 </div>
@@ -133,7 +133,7 @@
             @if (session('PSuccess'))
             <div class="flex justify-end">
                 <div id="alert-product"
-                    class="flex items-center p-3 mb-4 bg-gradient-to-tl from-green-600 to-lime-400 rounded-xl w-auto "
+                    class="flex items-center p-3 mb-4 bg-gradient-to-tl from-[var(--bg1)] to-[var(--table-bg)] rounded-xl w-auto "
                     role="alert">
                     <svg class="flex-shrink-0 w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor" viewBox="0 0 20 20">

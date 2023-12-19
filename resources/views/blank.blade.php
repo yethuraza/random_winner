@@ -94,7 +94,6 @@
 @section('scriptSection')
 <script>
     $().ready(function () {
-
         var customer_arr = [];
         var product_arr = [];
         $.ajax({
@@ -113,11 +112,11 @@
 
                     product_arr.push(name);
                 });
-                balhkensammae();
+                blank_prize();
             },
         });
 
-        function balhkensammae() {
+        function blank_prize() {
             if (customer_arr.length > product_arr.length) {
                 $('#toggleModal').removeClass('hidden');
             } else {
@@ -141,7 +140,6 @@
                 }
             });
         }
-
     })
 </script>
 @endsection

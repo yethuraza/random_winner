@@ -43,23 +43,11 @@ input[type="file"]::file-selector-button {
 .inside_box
 {
     border-radius: 17px;
-    /* background: rgb(242, 150, 150);
-    background: linear-gradient(
-        0deg,
-        rgba(242, 150, 150, 1) 22%,
-        rgba(241, 235, 235, 1) 91%
-    ); */
     transition: all 0.5s;
     backdrop-filter: blur(300px);
 }
 .table_box {
     border-radius: 17px;
-    /* background: rgb(242, 150, 150);
-    background: linear-gradient(
-        0deg,
-        rgb(239, 198, 198) 22%,
-        rgba(241, 235, 235, 1) 91%
-    ); */
     background:var(--table-bg);
     transition: all 0.5s;
 }
@@ -79,7 +67,7 @@ input[type="file"]::file-selector-button:hover {
 }
 
 .CusTable::-webkit-scrollbar-thumb {
-    background: #6d1919;
+    background: var(--color);
 }
 
 .TwoColorBtn {
@@ -125,13 +113,11 @@ h1 {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    /* margin-bottom: 15px; */
 }
 
 .customer_reel,
 .product_reel {
     text-align: center;
-        /* border: 8px solid #490e0e; */
         padding: 0 10px;
         height: 350px;
         overflow: hidden;
@@ -176,7 +162,6 @@ h1 {
     background: linear-gradient(0deg,
                 rgba(242, 150, 150, 1) 22%,
                 rgba(241, 235, 235, 1) 91%);
-    /* border: 8px solid #490e0e !important; */
 }
 .lever button:active {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);

@@ -22,17 +22,20 @@ Route::get('/', function () {
     $titles = Title::get()->last();
     return view('app', compact('titles'));
 });
-
-Route::post('UploadTitle', [TitleController::class, 'uploadTitle'])->name('uploadTitle');
+//uploads routes
 Route::get('uploadPage', [UploadController::class, 'goUploadPage'])->name('Upload');
 Route::get('getCustomer', [UploadController::class, 'getCustomer'])->name('getCustomer');
 Route::post('uploadCustomer', [UploadController::class, 'store'])->name('uploadCustomer');
 Route::post('uploadProduct', [UploadController::class, 'storeProduct'])->name('uploadProduct');
+Route::post('UploadTitle', [TitleController::class, 'uploadTitle'])->name('uploadTitle');
+Route::post('uploadWinner', [WinnerController::class, 'uploadWinner'])->name('uploadWinner');
+
+// blank gifts routes
 Route::get('enterBlank', [BlankController::class, 'creat'])->name('enterBlank');
 Route::post('getCusProd', [BlankController::class, 'index'])->name('getCusProd');
 Route::post('storeBlank', [BlankController::class, 'store'])->name('storeBlank');
-Route::post('uploadWinner', [WinnerController::class, 'uploadWinner'])->name('uploadWinner');
+
+//winner routes
 Route::get('PickWinner', [WinnerController::class, 'goPickWinner'])->name('PickWinner');
 Route::get('winnerList', [WinnerController::class, 'goWinnerList'])->name('goWinnerList');
-Route::get('exportWinnerList', [WinnerController::class, 'exportWinnerList'])->name('exportWinnerList');
 Route::get('clearWinnerTable', [WinnerController::class, 'clearWinnerTable'])->name('clearWinnerTable');

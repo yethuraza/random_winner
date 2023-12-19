@@ -15,7 +15,6 @@ use Illuminate\Validation\ValidationException;
 
 class UploadController extends Controller
 {
-    //direct to excel upload page
     public function getCustomer()
     {
         $customers = Customer::all()->toArray();
@@ -26,6 +25,7 @@ class UploadController extends Controller
         ];
         return response()->json($response);
     }
+    //direct to excel upload page
     public function goUploadPage()
     {
         $title = Title::get()->last();
@@ -33,7 +33,7 @@ class UploadController extends Controller
         $customers = Customer::all();
         return view("upload", compact("customers", "products", 'title'));
     }
-
+    // store participants
     public function store(Request $request)
     {
         $customerFile = $request->file("CustomerUpload");
@@ -47,7 +47,7 @@ class UploadController extends Controller
         }
 
     }
-
+    //store products
     public function storeProduct(Request $request)
     {
         $productFile = $request->file("ProductUpload");

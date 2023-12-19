@@ -14,7 +14,7 @@ use Maatwebsite\Excel\Facades\Excel;
 
 class WinnerController extends Controller
 {
-    //direct to winner picker page
+    //direct to picker page
 
     public function goPickWinner()
     {
@@ -33,12 +33,12 @@ class WinnerController extends Controller
         $title = Title::get()->last();
         $customers = Customer::all();
         $products = Product::all();
-        $winners = Winner::orderBy('created_at','desc')->get();
+        $winners = Winner::orderBy('created_at', 'desc')->get();
 
         return view("winnerList", compact("winners", "title", "products", "customers"));
     }
 
-
+    // upload winner with ajax 
     public function uploadWinner(Request $request)
     {
         $cus_id = $request->cus_id;
@@ -68,11 +68,7 @@ class WinnerController extends Controller
 
     }
 
-    public function exportWinnerList()
-    {
-        return Excel::download(new WinnersExport, 'winners.xlsx');
-    }
-
+    //clear winner list from DB
     public function clearWinnerTable()
     {
         $winner = Winner::all();

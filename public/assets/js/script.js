@@ -1,7 +1,3 @@
-/*
-	Slot Machine
-*/
-
 $(document).ready(function () {
     setBackground();
     // cus and prod data array
@@ -10,6 +6,7 @@ $(document).ready(function () {
     var cus_id = [];
     var prod_id = [];
 
+    // ajax call for getting participants and gift from server 
     $.ajax({
         url: "getCustomer",
         method: "GET",
@@ -34,6 +31,7 @@ $(document).ready(function () {
             initializeSlotMachine();
         },
     });
+    // changing theme color 
     function setBackground() {
         // Check if color values are stored in localStorage
         var storedThemeColor = localStorage.getItem("theme_color");
@@ -46,6 +44,7 @@ $(document).ready(function () {
             theme_color = $("#theme_color").val();
             setThemeColor(theme_color);
         });
+        // set theme color according to user choise
         function setThemeColor(color) {
             if (color === "red") {
                 localStorage.setItem("theme_color", theme_color);
@@ -211,11 +210,12 @@ $(document).ready(function () {
             }
             
         }
-
+        // theme toggler
         $(".chbg").click(function () {
             $(".chbgbox").toggleClass("hidden");
         });
     }
+    // slot machine
     function initializeSlotMachine() {
         var customer_length = customer_arr.length;
         var product_length = product_arr.length;
@@ -484,7 +484,7 @@ $(document).ready(function () {
 
         initial();
     }
-
+    //datatable parts
     $("#myTable").DataTable({
         dom: "Bfrtip",
         buttons: [
@@ -501,7 +501,6 @@ $(document).ready(function () {
         ],
         ordering: false,
     });
-
     $("#CusTB").DataTable({
         ordering: false,
     });
